@@ -1,9 +1,7 @@
 include /src/common/components/layout
 
 +layout('Home page')
-  section
-    .container
-      div Home page
-      div
-        a(href='/test.html') Go to test page
-      div(style='height: 200vh')
+  include app/app
+  include phone/phone
+  include works/works
+  include download/download

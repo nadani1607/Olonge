@@ -1,8 +1,29 @@
-footer {
-  color: red;
-  font-size: 30px;
+.footer {
 
-  @include media-breakpoint-down(md) {
-    color: green;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__notice {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: right;
+    letter-spacing: 0.1px;
+    color: #5C5C5C;
+  }
+
+  &__img {
+    & + & {
+      margin-left: 32px;
+    }
   }
 }

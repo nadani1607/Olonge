@@ -2,23 +2,40 @@
   "header": {
     "menu": [
       {
-        "label": "About Us",
-        "link": "#preview"
+        "label": "Home",
+        "link": "#home"
       },
       {
-        "label": "Services",
-        "link": "#services"
+        "label": "Product",
+        "link": "#product"
       },
       {
-        "label": "Portfolio",
-        "link": "#portfolio"
+        "label": "Faq",
+        "link": "#faq"
       },
       {
-        "label": "Blog",
-        "link": "#blog"
+        "label": "Contact",
+        "link": "#contact"
       }
     ]
   },
+  "works": [
+    {
+      "title": "Create an account ",
+      "img": "images/works/mobile.png",
+      "text": "Create/login to an existing account to get started"
+    },
+    {
+      "title": "Explore varieties",
+      "img": "images/works/mobile1.png",
+      "text": "Shop for your favorites meal as e dey hot."
+    },
+    {
+      "title": "Checkout",
+      "img": "images/works/mobile2.png",
+      "text": "When you done check out and get it delivered."
+    }
+  ],
   "footer": {
     "title": "footer"
   }

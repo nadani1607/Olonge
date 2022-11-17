@@ -7,8 +7,7 @@
 
   &.fixed {
     .header__wrapper,
-    .header__link,
-    {
+    .header__link {
       min-height: 44px;
     }
 
@@ -18,7 +17,7 @@
   }
 
   .logo img {
-    max-height: 31px;
+    max-height: 100px;
     transition: .2s;
   }
 
@@ -141,9 +140,9 @@
 
     /* In cross form */
     .opened {
-      path {
-        //stroke: #ffffff;
-      }
+      // path {
+      //stroke: #ffffff;
+      // }
 
       .top_bar,
       .bottom_bar {

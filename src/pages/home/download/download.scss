@@ -1,0 +1,56 @@
+.download {
+  background-image: url("../images/download/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    padding-top: 146px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-top: 20px;
+  }
+
+  &__row {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 130px;
+  }
+
+  &__btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding: 18px 31px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+  }
+}
+
+.download__btn:hover {
+  background-color: #FA4A0C;
+  border: none;
+}
+
+.download__btn + .download__btn {
+  margin-left: 20px;
+}

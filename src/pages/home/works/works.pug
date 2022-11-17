@@ -1,0 +1,15 @@
+mixin worksitem(args={})
+  .works__box
+    img(src=args.img alt="phone")
+    .works__item
+      p.works__notice= args.title
+      p.works__text= args.text
+      p.works__desc An account is created with your email and a desired password
+
+section.works
+  .container
+    .works__wrapper
+      hr
+      p.works__title How the app works
+      each item in works
+        +worksitem(item)

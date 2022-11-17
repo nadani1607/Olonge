@@ -1,0 +1,67 @@
+.app {
+  background-image: url("../images/app/app.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    padding-top: 73px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    margin-top: 17px;
+  }
+
+  &__desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #F7F7F7;
+    margin-top: 27px;
+  }
+
+  &__row {
+    margin-top: 54px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 146px;
+  }
+
+  &__btn {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    padding: 16px 59px;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+  }
+}
+
+.app__btn:hover {
+  background-color: #FA4A0C;
+  border: none;
+}
+
+.app__btn + .app__btn {
+  margin-left: 50px;
+}
