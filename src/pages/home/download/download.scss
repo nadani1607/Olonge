@@ -8,21 +8,29 @@
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
-    line-height: 57px;
+    line-height: 1.43;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: $white;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 25px;
+     }
   }
 
   &__text {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 1.58;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: $white;
     margin-top: 20px;
+
+    @include media-breakpoint-down(xs) {
+      font-size: 20px;
+     }
   }
 
   &__row {
@@ -38,19 +46,24 @@
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: $white;
     padding: 18px 31px;
     background-color: transparent;
     border-radius: 10px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white;
+
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+    }
+
+    &+& {
+      margin-left: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 14px;
+      padding: 10px 25px;
+     }
   }
-}
-
-.download__btn:hover {
-  background-color: #FA4A0C;
-  border: none;
-}
-
-.download__btn + .download__btn {
-  margin-left: 20px;
 }

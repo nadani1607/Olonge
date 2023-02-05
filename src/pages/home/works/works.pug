@@ -1,12 +1,12 @@
 mixin worksitem(args={})
   .works__box
-    img(src=args.img alt="phone")
+    img.works__img(src=args.img alt="phone")
     .works__item
       p.works__notice= args.title
       p.works__text= args.text
       p.works__desc An account is created with your email and a desired password
 
-section.works
+section.works#how-it-works
   .container
     .works__wrapper
       hr

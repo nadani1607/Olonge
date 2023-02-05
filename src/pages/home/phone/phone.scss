@@ -4,5 +4,13 @@
 
   &__mobile {
     margin-top: -250px;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: -240px;
+     }
+
+    @include media-breakpoint-down(xs) {
+     margin-top: -170px
+    }
   }
 }

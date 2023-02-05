@@ -4,11 +4,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+     }
+  }
+
+  &__logo {
+    width: 33%;
+
+    @include media-breakpoint-down(xs) {
+      width: 50%;
+      margin-top: 20px;
+     }
   }
 
   &__row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    @include media-breakpoint-down(xs) {
+      margin-top: 20px;
+     }
   }
 
   &__notice {
@@ -19,9 +38,13 @@
     text-align: right;
     letter-spacing: 0.1px;
     color: #5C5C5C;
+
+    @include media-breakpoint-down(xs) {
+      margin-top: 20px;
+     }
   }
 
-  &__img {
+  &__link {
     & + & {
       margin-left: 32px;
     }

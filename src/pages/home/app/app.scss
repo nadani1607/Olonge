@@ -3,6 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+    color: white;
+  }
+
   &__title {
     font-style: normal;
     font-weight: 700;
@@ -10,30 +16,62 @@
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #F7F7F7;
+    color: $bright;
     padding-top: 73px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 20px;
+    }
   }
 
   &__text {
     font-style: normal;
     font-weight: 700;
     font-size: 58px;
-    line-height: 80px;
+    line-height: 1.38;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #FFFFFF;
+    color: $white;
     margin-top: 17px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 50px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 30px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 20px;
+    }
   }
 
   &__desc {
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 1.58;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #F7F7F7;
+    color: $bright;
     margin-top: 27px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 20px;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 18px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 18px;
+    }
   }
 
   &__row {
@@ -49,19 +87,37 @@
     font-size: 24px;
     line-height: 36px;
     letter-spacing: 0.1px;
-    color: #FFFFFF;
+    color: $white;
     padding: 16px 59px;
     border-radius: 30px;
-    border: 1px solid #FFFFFF;
+    border: 1px solid $white;
     background-color: transparent;
+
+    &:hover {
+      background-color: $red;
+      border-color: $red;
+    }
+
+    &+& {
+      margin-left: 50px;
+
+      @include media-breakpoint-down(xs) {
+        margin-left: 30px;
+      }
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+      padding: 1px 55px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      font-size: 19px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 12px;
+      padding: 6px 30px;
+    }
   }
-}
-
-.app__btn:hover {
-  background-color: #FA4A0C;
-  border: none;
-}
-
-.app__btn + .app__btn {
-  margin-left: 50px;
 }
